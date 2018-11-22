@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?language JavaScript?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.Insets?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="example.MainViewController">
+  <top>
+    <Label text="Studentska sluzba" />
+  </top>
+  <center>
+    <TabPane fx:id="tabPaneMain" tabClosingPolicy="UNAVAILABLE" side="TOP">
+      <tabs>
+        <Tab text="Login">
+          <content>
+            <AnchorPane id="Content">
+               <children>
+                     <Label layoutX="100.0" layoutY="100.0" text="Username" />
+                     <TextField fx:id="tfLoginUsername" layoutX="200.0" layoutY="100.0"     />
+                     <Label layoutX="100.0" layoutY="150.0" text="Password" />
+                     <TextField fx:id="tfLoginPassword" layoutX="200.0" layoutY="150.0"     />
+                     <Label fx:id="labLoginKontrolna" layoutX="100.0" layoutY="200.0" text="Kontrolna labela" />
+                     <Button fx:id="butLoginOk" layoutX="600.0" layoutY="500.0" text="OK" onAction="#btnLoginOk"/>
+                     <Button fx:id="butLoginCancel" layoutX="700.0" layoutY="500.0" text="Cancel" />
+                     <fx:script>
+                       function btnLoginOk() {
+                            labLoginKontrolna.setText("Button clicked");
+                       }
+                     </fx:script>
+               </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Student">
+          <content>
+            <AnchorPane id="Content">
+               <children>
+                     <Label layoutX="100.0" layoutY="50.0" text="Broj indeksa (7)" />
+                     <TextField fx:id="tfStudentBrindeksa" layoutX="200.0" layoutY="50.0" text=""/>
+                     <Label layoutX="100.0" layoutY="80.0" text="Ime (1)" />
+                     <TextField fx:id="tfStudentIme" layoutX="200.0" layoutY="80.0" text=""/>
+                     <Label layoutX="100.0" layoutY="110.0" text="Prezime (2)" />
+                     <TextField fx:id="tfStudentPrezime" layoutX="200.0" layoutY="110.0" text=""/>
+                     <Label layoutX="100.0" layoutY="140.0" text="Smer (8)" />
+                     <TextField fx:id="tfStudentSmer" layoutX="200.0" layoutY="140.0" text=""/>
+                     <Label layoutX="100.0" layoutY="170.0" text="Godina studija (14)" />
+                     <TextField fx:id="tfStudentGodstudija" layoutX="200.0" layoutY="170.0" text=""/>
+                     <Button fx:id="butStudentOk" layoutX="600.0" layoutY="500.0" text="OK" onAction="#btnStudentOk"/>
+                     <Button fx:id="butStudentCancel" layoutX="700.0" layoutY="500.0" text="Cancel" />
+               </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Profesor">
+           <content>
+            <AnchorPane id="Content">
+                <children>
+                     <Label layoutX="100.0" layoutY="50.0" text="Sifra profesora" />
+                     <TextField fx:id="tfProf1" layoutX="200.0" layoutY="50.0" text=""/>
+                     <Label layoutX="100.0" layoutY="80.0" text="Ime" />
+                     <TextField fx:id="tfProf2" layoutX="200.0" layoutY="80.0" text=""/>
+                     <Label layoutX="100.0" layoutY="110.0" text="Prezime" />
+                     <TextField fx:id="tfProf3" layoutX="200.0" layoutY="110.0" text=""/>
+                     <Label layoutX="100.0" layoutY="140.0" text="Lb 4" />
+                     <TextField fx:id="tfProf4" layoutX="200.0" layoutY="140.0" text=""/>
+                     <Label layoutX="100.0" layoutY="170.0" text="Lab5" />
+                     <TextField fx:id="tfProf5" layoutX="200.0" layoutY="170.0" text=""/>
+                     <Button fx:id="butStudentOk" layoutX="600.0" layoutY="500.0" text="OK" onAction="#btnProfesorOk"/>
+                     <Button fx:id="butStudentCancel" layoutX="700.0" layoutY="500.0" text="Cancel" />
+                </children>
+             </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </center>
+  <bottom>
+    <HBox>
+      <children>
+        <Label text="--- status line ---" />
+      </children>
+    </HBox>
+  </bottom>
+
+</BorderPane>

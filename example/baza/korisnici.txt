@@ -1,0 +1,8 @@
+Vladimir|Antonic|1|b|1234|Sneza|SW2_2015|SII|20.05.1996.|2443242|NoviSad;Jesenjinova;30|0628771192|vlada996@gmail.com|I|0001
+Petar|Petrovic|2|pera|1234|Marko|SW4_2015|SIIT|24.06.1996.|33333332|NoviSad;Temerinska;52|0620001192|pera@gmail.com|IV|0002
+Marko|Bogicevic|3|marko|1234|1231312|REDOVNI_PROFESOR
+Nikola|Nikolic|4|nidza|1234|124441312|VANREDNI_PROFESOR
+Milica|Milicevic|5|mica|1234
+Marina|Jerkovic|6|maki|1234
+pera|peric|7|peri|39209|nikola|sii7328|sii|30.08.1994.|rw370rrq8w0830|Novi Sad;Tozin sokak;3|4924920|peragmail|III|328972035
+studic|studenko|8|stuja|123|dasdsh|SW2.2015|SIIT|02.02.1992.|394823040238|Przogrnci;Ulica Lipa;23|042342043042|fkdfjld@fjdksjfkl.djsidjakl|IV|0004
